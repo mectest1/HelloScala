@@ -13,11 +13,11 @@ class ShapesDrawingActor extends Actor{
   def receive = {
     case s: Shape =>
       s.draw { str  => println(s"ShapeDrawingActor: $str")}
-      sender ! Response(s"ShapesDrawingActor: $s drawn")
+      sender ! Response(s"ShapesDr awingActor: $s drawn")
     case Exit =>
       println(s"ShapesDrawingActor: exiting...")
       sender ! Finished
-    case unexpected =>  //dfault. Equivalent to "unexpected: Any"
+    case unexpected =>  //default. Equivalent to "unexpected: Any"
       val response = Response(s"Error: Unknown message:$unexpected")
       println(s"ShapesDrawingActor: $response")
       sender ! response
