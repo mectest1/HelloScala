@@ -16,6 +16,6 @@ class SimpleServlet extends HttpServlet{
     val responseBody: NodeSeq = 
         <html><body><h1>Hello, World!</h1></body></html>
     
-    
+    response.getWriter.write(responseBody.toString)
   }
 }

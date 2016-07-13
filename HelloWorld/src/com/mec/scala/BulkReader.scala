@@ -3,7 +3,7 @@ package com.mec.scala
 import java.io._
 
 abstract class BulkReader {
-  type In
+  type In  //abstract type, instead of parameterized type
   val source: In
   def read: String
 }

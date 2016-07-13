@@ -32,4 +32,16 @@ object Snippets {
 	parse2("123")                             //> res3: Either[com.mec.test.Snippets.Failure,Int] = Right(123)
 	
   println("Hello, World!")                        //> Hello, World!
+  
+  
+	val number = 1 + 2                        //> number  : Int = 3
+	
+	List(1, 2, 3, 3, 4, 4, 5, 5, 5) filter (_ < 4) distinct
+                                                  //> res4: List[Int] = List(1, 2, 3)
+                                                  
+	case class Customer(name:String)
+	
+	Customer("Helen")                         //> res5: com.mec.test.Snippets.Customer = Customer(Helen)
+	
+		
 }
