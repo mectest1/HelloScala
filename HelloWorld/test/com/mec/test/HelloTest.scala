@@ -16,7 +16,7 @@ class HelloTest {
   }
   
   @Test
-  def helloScala = {
+  def testHello = {
     println("Hello, World!");
   }
 }
